@@ -1,3 +1,5 @@
+// stack data structure follow the rules of lifo....(LAST IN FIRST OUT)
+
 class Stack {
     constructor() {
         this.stack = []
@@ -8,7 +10,9 @@ class Stack {
     }
 
     remove() {
-        this.stack.pop()
+        if(this.stack.length) {
+            this.stack.pop()
+        }
     }
 }
 
