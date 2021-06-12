@@ -75,12 +75,24 @@
 // console.log(findMax([3, 4, 5, 6, 3]))
 
 
-function sortBestFirst(numbers) {
-    numbers.sort((a, b) => {
-        return b-a
-    })
-    return numbers
+// function sortBestFirst(numbers) {
+//     numbers.sort((a, b) => {
+//         return b-a
+//     })
+//     return numbers
+// }
+
+// console.log(sortBestFirst([3, 8, -5, -6, 3]))
+
+
+function counting(arr) {
+    let count = 0
+    for(let i = 0; i< arr.length; i++) {
+        for(let j = 0; j< arr.length; j++) {
+            count += arr[j]
+        }   
+    }
+    return count
 }
 
-console.log(sortBestFirst([3, 8, -5, -6, 3]))
-
+console.log(counting([2, 3, 4]))

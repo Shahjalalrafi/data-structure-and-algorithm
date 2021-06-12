@@ -18,3 +18,4 @@ function selectionSort(arr) {
 
 const decendingNumbers = selectionSort(numbers)
 console.log(decendingNumbers)
+
