@@ -39,5 +39,6 @@ const together = new LinkedList(head)
 together.add(135)
 together.add(145)
 together.add(165)
+together.add(198)
 
 console.log(together.head)
